@@ -1,2 +1,11 @@
 before_script: cd analytics-event-publisher
 language: java
+after_script: ls -l build
+
+deploy:
+  provider: releases
+  api_key: "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"
+  file: "build/"
+  skip_cleanup: true
+  on:
+    tags: true
