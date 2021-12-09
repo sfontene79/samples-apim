@@ -1,1 +1,2 @@
+before_script: cd analytics-event-publisher
 language: java
